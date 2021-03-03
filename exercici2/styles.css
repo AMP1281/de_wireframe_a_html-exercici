@@ -86,13 +86,12 @@ body{
     display: flex;
     justify-content: space-between;
     margin-right: 2%;
+    align-items: center;
 }
 
 .redes li{
-    background: rgb(230,231,233);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    font-size: 35px;
+    padding: 5% 5%;
 }
 
 /*Navigation*/
@@ -106,6 +105,9 @@ body{
 .nav-menu li{
     background: rgb(151,152,154);
     height: 6vh;
+    text-decoration: none;
+    text-align: center;
+    padding: 5% 0px 5% 0px;
 }
 
 /*Aside*/
