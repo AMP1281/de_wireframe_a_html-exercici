@@ -71,6 +71,7 @@ a:link, a:visited, a:active {
 
 
 /*Header*/
+
 .header{
     width: 100%;
     display: flex;
@@ -121,6 +122,7 @@ a:link, a:visited, a:active {
 }
 
 /*Aside*/
+
 .image-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -143,6 +145,7 @@ a:link, a:visited, a:active {
 }
 
 /*Section*/
+
 .section{
     background:rgb(217, 218, 176);
     width: 100%;
@@ -179,10 +182,13 @@ a:link, a:visited, a:active {
 .section .article-uno{
     background: url('./img/gastronomia.jpg') no-repeat center center/cover;
     background-size: 100% 100%;
+    margin-top: 1vh;
 }
 .section .article-dos{
     background: url('./img/nousdestins.jpg') no-repeat center center/cover;
     background-size: 100% 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 .btn{
     cursor: pointer;
@@ -198,6 +204,7 @@ a:link, a:visited, a:active {
 }
 
 /*Footer*/
+
 .footer-style{
     margin: 1vh 0vh 0vh 0vh;
     height: 15vh;
@@ -216,6 +223,9 @@ a:link, a:visited, a:active {
     font-weight: bold;
     margin-top: 0.5%;
 }
+
+/*Media*/
+
 @media (max-width: 1070px) {
     .redes {
         width: 25%;
@@ -230,6 +240,7 @@ a:link, a:visited, a:active {
         padding: 2% 0px 2% 0px;
     }
 }
+
 @media (max-width: 700px) {
     .image-cards {
         grid-template-columns: 1fr;
@@ -240,5 +251,16 @@ a:link, a:visited, a:active {
     .redes{
         width: 35%;
     }
+    .logo{
+        width: 35%;
+    }
 }
 
+@media (max-width: 518px) {
+    .redes{
+        width: 60%;
+    }
+    .logo{
+        width: 30%;
+    }
+}
