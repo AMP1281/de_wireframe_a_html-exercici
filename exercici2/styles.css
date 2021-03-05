@@ -49,11 +49,10 @@ a img{
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
     display: block;
 }
+
 *{
     box-sizing: border-box;
 }
-
-
 
 body{
     background: rgb(244, 245, 219);
@@ -65,10 +64,10 @@ body{
     width: 80%;
     margin: 20px auto;
 }
+
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-
 
 /*Header*/
 
@@ -93,7 +92,6 @@ a:link, a:visited, a:active {
     margin-right: 2%;
     align-items: center;
 }
-
 .redes li{
     font-size: 35px;
     padding: 5% 5%;
@@ -107,7 +105,7 @@ a:link, a:visited, a:active {
     gap: 3px;
     margin: 2vh auto;
     text-align: center;
-    }
+}
 .nav-menu li{
     display: grid;
     background: rgb(35, 104, 155);
@@ -121,7 +119,6 @@ a:link, a:visited, a:active {
     align-self: center;
     display: flow-root;
 }
-
 .image-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -131,13 +128,11 @@ a:link, a:visited, a:active {
     font-weight: bold;
     justify-content: stretch;
 }
-
 .image-cards img{
     width: 100%;
     height: 100%;
     display: flow-root;
 }
-
 .image-cards div{
     display: grid;
     grid-template-rows: 35vh 4vh 4vh;
@@ -150,7 +145,6 @@ a:link, a:visited, a:active {
     align-self: center;
     display: flow-root;
 }
-
 
 /*Section*/
 
@@ -185,8 +179,7 @@ a:link, a:visited, a:active {
     margin: 0.5%;
     text-align: center;
     font-weight: bold;
-    }
-
+}
 .section .article-uno{
     background: url('./img/gastronomia.jpg') no-repeat center center/cover;
     background-size: 100% 100%;
@@ -239,7 +232,6 @@ a:link, a:visited, a:active {
         width: 25%;
     }
 }
-
 @media (max-width: 904px){
     .nav-menu {
         grid-template-columns: 1fr;
@@ -254,7 +246,6 @@ a:link, a:visited, a:active {
         height: 90vh;
     }
 }
-
 @media (max-width: 700px) {
     .logo{
         width: 35%;
@@ -275,7 +266,6 @@ a:link, a:visited, a:active {
         width: 95%;
     }
 }
-
 @media (max-width: 518px) {
     .logo{
         width: 30%;
