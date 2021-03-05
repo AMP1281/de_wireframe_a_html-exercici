@@ -208,7 +208,7 @@ a:link, a:visited, a:active {
 
 .footer-style{
     margin: 1vh 0vh 0vh 0vh;
-    height: 15vh;
+    height: 17vh;
     background: rgb(35, 104, 155);
     display: flex;
     flex-direction: column;
