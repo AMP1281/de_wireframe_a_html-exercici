@@ -254,7 +254,7 @@ a:link, a:visited, a:active {
         grid-template-columns: 1fr;
     }
     .image-cards div{
-        height: 33vh;
+        height: 45vh;
     }
     .section{
         height: 80vh;
