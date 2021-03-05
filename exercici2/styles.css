@@ -236,7 +236,7 @@ a:link, a:visited, a:active {
         padding: 2% 0px 2% 0px;
     }
     .image-cards div{
-        height: 30vh;
+        height: 40vh;
     }
     .section{
         height: 90vh;
@@ -273,3 +273,4 @@ a:link, a:visited, a:active {
     }
 
 }
+
