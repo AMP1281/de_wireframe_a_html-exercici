@@ -52,9 +52,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 *{
     box-sizing: border-box;
 }
-html,body{
-    height: calc(100vh - 40px);
-}
 
 body{
     background: rgb(244, 245, 219);
@@ -81,7 +78,6 @@ a:link, a:visited, a:active {
     justify-content: space-between;
     }
 .logo{
-    background: rgb(210,211,213);
     height: 55%;
     width: 20%;
     display: flex;
@@ -128,16 +124,16 @@ a:link, a:visited, a:active {
     grid-template-columns: 1fr 1fr 1fr;
     margin:2vh auto;
     gap: 9px;
-    text-align:center;
+    text-align: center;
     font-weight: bold;
 }
 .image-cards img{
     width: 100%;
-    height: 77%;
+    height: 80%;
 }
 
 .image-cards div{
-    height: 30vh;
+    height: 35vh;
     background: rgb(217, 218, 176);
 }
 .image-cards h3{
@@ -149,7 +145,7 @@ a:link, a:visited, a:active {
 .section{
     background:rgb(217, 218, 176);
     width: 100%;
-    height: 90vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,28 +235,41 @@ a:link, a:visited, a:active {
     .nav-menu li{
         padding: 2% 0px 2% 0px;
     }
+    .image-cards div{
+        height: 30vh;
+    }
+    .section{
+        height: 90vh;
+    }
 }
 
 @media (max-width: 700px) {
+    .logo{
+        width: 35%;
+    }
+    .redes{
+        width: 35%;
+    }
     .image-cards {
         grid-template-columns: 1fr;
     }
     .image-cards div{
-        height: 30vh
+        height: 33vh;
     }
-    .redes{
-        width: 35%;
+    .section{
+        height: 80vh;
     }
-    .logo{
-        width: 35%;
+    .section article{
+        width: 95%;
     }
 }
 
 @media (max-width: 518px) {
-    .redes{
-        width: 60%;
-    }
     .logo{
         width: 30%;
     }
+    .redes{
+        width: 60%;
+    }
+
 }
