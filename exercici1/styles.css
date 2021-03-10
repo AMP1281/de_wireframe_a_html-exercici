@@ -53,104 +53,100 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
 }
 html,body{
-    height: calc(100vh - 40px);
-}
-
-body{
+    height: 100vh;
+    width: 100%;
     background: rgb(230,231,233);
-}
-
-.container{
-    width: 80%;
-    margin: 20px auto;
-}
-
-/*Header*/
-.header{
-    width: 100%;
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
-    height: 10vh;
-    background: rgb(75,75,77);
-    justify-content: space-between;
+}
+    .container{
+        width: 80%;
+        height: 95%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
-.logo{
-    background: rgb(210,211,213);
-    height: 50%;
-    width: 25%;
-    display: flex;
-    margin-left: 2%;
-}
-.redes{
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2%;
-}
+        /*Header*/
+            .header{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            background: rgb(75,75,77);
+            }
+                .logo{
+                height: 65%;
+                flex: 1;
+                background: rgb(210,211,213);
+                margin-left: 1%;
+                }
+                .redes{
+                flex: 4;
+                display: flex;
+                justify-content: flex-end;
+                }
+                    .redes li{
+                    background: rgb(230,231,233);
+                    width: 2.5em;
+                    height: 2.5em;
+                    border-radius: 1.25em;
+                    margin-right: 1%;
+                    }
+        /*Navigation*/
+        nav{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+            li{
+            background: rgb(151,152,154);
+            }
+        /*Aside*/
+        .image-cards{
+        width: 100%;
+        height: 20%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 9px;
+        }       
+            .image-cards img{
+            width: 100%;
+            }
+            .image-cards div{
+            background:rgb(133,134,136);
+            }
+        /*Section*/
+        .section{
+        width: 100%;
+        height: 47%;
+        background: rgb(133,134,136);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        }
+            .section article{
+            width: 80%;
+            height: 100%;
+            background: rgb(75,75,77);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            }
+        /*Footer*/
+        .footer-style{
+        width: 100%;
+        height: 8%;
+        background: rgb(75,75,77);
+        }
 
-.redes li{
-    background: rgb(230,231,233);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
-
-/*Navigation*/
-
-.nav-menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 3px;
-    margin: 2vh auto;
-    }
-.nav-menu li{
-    background: rgb(151,152,154);
-    height: 6vh;
-}
-
-/*Aside*/
-.image-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin:2vh auto;
-    gap: 9px;
-}
-.image-cards img{
-    width: 100%;
-}
-.image-cards div{
-    background:rgb(133,134,136);
-    height: 20vh;
-}
-
-/*Section*/
-.section{
-    background: rgb(133,134,136);
-    width: 100%;
-    height: 47vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 2vh auto;
-}
-.section article{
-    width: 80%;
-    height: 100%;
-    background: rgb(75,75,77);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 2%;
-}
-
-/*Footer*/
-.footer-style{
-    margin: 1vh 0vh 0vh 0vh;
-    height: 8vh;
-    background: rgb(75,75,77);
-}
 @media (max-width: 1070px) {
     .redes {
         width: 25%;
