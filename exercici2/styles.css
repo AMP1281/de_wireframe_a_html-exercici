@@ -150,18 +150,19 @@ body{
                         flex-flow: column nowrap;
                         justify-content: center;
                         align-items: center;
-                        margin: 2px;
+                        width: 200px;
+                        margin:1%;
                         flex: 1 1 auto;
                         }
                             .image-cards img{
-                            width: 100%;
-                            height: 100%;
+                                width: 100%;
+                                height: 100%;
                             }
                             .image-cards h3{
-                            display: flow-root;
+
                             }
                             .image-cards a{
-                            display: flow-root;
+
                             }
         /*Section*/
         .section{
