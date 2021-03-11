@@ -52,7 +52,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 *{
     box-sizing: border-box;
 }
-html,body{
+body{
     height: 100vh;
     width: 100%;
     background: rgb(230,231,233);
@@ -69,7 +69,7 @@ html,body{
         justify-content: space-between;
         align-items: center;
     }
-        /*Header*/
+            /*Header*/
             .header{
             width: 100%;
             height: 10%;
@@ -96,29 +96,48 @@ html,body{
                     border-radius: 1.25em;
                     margin-right: 1%;
                     }
-        /*Navigation*/
-        nav{
-        width: 100%;
-        height: 6%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-            li{
-            background: rgb(151,152,154);
-            }
-        /*Aside*/
-        .image-cards{
-        width: 100%;
-        height: 20%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 9px;
-        }       
-            .image-cards img{
+            /*Navigation*/
+            .nav-menu{
+                height: 6%;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                }
+                .nav-menu ul{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                }
+                .nav-menu li{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2px;
+                    width: 200px;
+                    flex: 1 1 auto;
+                    align-content: center;
+                    background: rgb(151,152,154);
+                }
+            /*Aside*/
+            .image-cards{
             width: 100%;
-            }
+            height: 20%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: center;
+            }       
             .image-cards div{
+            display: flex;
+            width: 200px;
+            margin: 2px;
+            height: 100%;
+            flex: 1 1 auto;
             background:rgb(133,134,136);
             }
         /*Section*/
@@ -135,10 +154,6 @@ html,body{
             width: 80%;
             height: 100%;
             background: rgb(75,75,77);
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: flex-end;
-            align-items: center;
             }
         /*Footer*/
         .footer-style{
@@ -147,26 +162,53 @@ html,body{
         background: rgb(75,75,77);
         }
 
-@media (max-width: 1070px) {
-    .redes {
-        width: 25%;
-    }
+@media (max-width: 1275px){
+        .nav-menu{
+            height: 12%;
+        }
+            .nav-menu li{
+                height: 50%;
+            }
+        .section{
+            height:41%;
+        }
+            .section article{
+                height: 100%;
+            }
+}
+@media(max-width: 765px){
+        .nav-menu{
+            height: 14%;
+        }
+            .nav-menu li{
+                height: 33.33%;
+            }
+        .image-cards{
+            height: 22%;
+        }
+            .image-cards div{
+                height: 50%;
+            }
+        .section{
+            height:37%;
+        }
+            .section article{
+                height: 100%;
+            }
+}
+@media(max-width: 510px){
+        .nav-menu{
+            height: 14%;
+        }
+            .nav-menu li{
+                height: 20%;
+            }
+        .image-cards{
+            height: 22%;
+        }
+            .image-cards div{
+                height: 33.33%;
+            }
 }
 
-@media (max-width: 904px){
-    .nav-menu {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 700px) {
-    .image-cards {
-        grid-template-columns: 1fr;
-    }
-    .image-cards div{
-        height: 10vh
-    }
-    .redes{
-        width: 35%;
-    }
-}
 
