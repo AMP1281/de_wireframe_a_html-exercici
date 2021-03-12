@@ -52,6 +52,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -63,7 +64,7 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
+    }
     .container{
         width: 80%;
         height: 95%;
@@ -76,6 +77,7 @@ body{
         .header{
         width: 100%;
         height: 8%;
+        margin: 0.1%;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -116,7 +118,7 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 2px;
+                margin: 0.1%;
                 width: 200px;
                 flex: 1 1 auto;
                 align-content: center;
@@ -137,144 +139,238 @@ body{
         align-content: center;
         }
             .image-cards ul{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-content: center;
-                }
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: center;
+            }
                     .image-cards li{
-                        height: 100%;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        width: 200px;
-                        margin:1%;
-                        flex: 1 1 auto;
-                        }
-                            .image-cards img{
-                                width: 100%;
-                                height: 100%;
+                    background:rgb(217, 218, 176);
+                    height: 100%;
+                    width: 250px;
+                    margin: 0.1%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex: 1 1 auto;
+                    }
+                            .foto{
+                            width: 100%;
+                            height: 1px;
+                            flex: 3;
+                            display: flex;
+                            justify-content: center;
                             }
-                            .image-cards h3{
+                            .text{
+                            height: 1px;
+                            flex: 1;
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            }
+                                .text p{
+                                font-size: 15px;
+                                margin-right: 4%;
+                                }
 
-                            }
-                            .image-cards a{
-
-                            }
         /*Section*/
         .section{
         background:rgb(217, 218, 176);
         width: 100%;
-        height: 47%;
+        height: 50%;
+        margin: 0.1%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
         }
-            .section article{
+            .articulos{
             width: 80%;
             height: 100%;
             display: flex;
-            flex-direction: column;
+            flex-flow: column nowrap;
+            justify-content: space-between;
             align-items: center;
-            justify-content: flex-end;
-            padding-bottom: 2%;
-            color: black;
             }
-            .section h2{
-            background: rgba(244,245,219, .8);
-            margin: 0.5%;
-            font-weight: bold;
-            font-size: 19px;
-            }
-            .section p{
-            background: rgba(244,245,219, .9);
-            margin: 0.5%;
-            text-align: center;
-            font-weight: bold;
-            }
-            .section .article-uno{
-            background: url('./img/gastronomiap.jpg') no-repeat center center/cover;
-            background-size: 100% 100%;
-            margin-top: 1vh;
-            display: flex;
-            justify-content: flex-end;
-            }
-            .section .article-dos{
-            background: url('./img/nousdestinsp.jpg') no-repeat center center/cover;
-            background-size: 100% 100%;
-            margin-top: 1vh;
-            margin-bottom: 1vh;
-            }
-            .btn{
-            cursor: pointer;
-            border: 0;
-            padding: 5px 10px;
-            margin: 0px 10px 0px 10px;
-            color: white;
-            background: rgb(72, 126, 149);
-            display: inline-block;
-            font-weight: bold;
-            font-size: 16px;
-            border: 1px solid #fff;
-            }
+                article{
+                width: 100%;
+                margin: 0.2%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                }
+                    .fotouno{
+                    flex: 1;
+                    background: url('./img/gastronomiap.jpg') no-repeat center center/cover;
+                    background-size: 100% 100%;
+                    }
+                    .fotodos{
+                    flex: 1;
+                    background: url('./img/nousdestinsp.jpg') no-repeat center center/cover;
+                    background-size: 100% 100%;
+                    }
+                    .articulos h2{
+                    background: rgba(244,245,219, .8);
+                    font-weight: bold;
+                    margin: 0.4%;
+                    letter-spacing: 1px;
+                    }
+                    .articulos p{
+                    background: rgba(244,245,219, .9);
+                    margin: 0.4%;
+                    font-size: 14px;
+                    text-align: center;
+                    }
+                    .btn{
+                    cursor: pointer;
+                    border: 0;
+                    padding: 5px 10px;
+                    margin: 0.5%;
+                    color: white;
+                    background: rgb(72, 126, 149);
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    border: 1px solid #fff;
+                    }
         /*Footer*/
         .footer-style{
         height: 8%;
         width: 100%;
+        margin: 0.1%;
         background: rgb(35, 104, 155);
         display: flex;
         flex-direction: row wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         }
-        .footer-style h5{
-        font-weight: bold;
-        margin-bottom: 0.2%;
-        }
-        .footer-style .copyright{
-        color: rgb(72, 126, 149);
-        font-weight: bold;
-        margin-top: 0.5%;
-        }
-
+            .margen{
+            height: 100%;
+            width: 85%;
+            display: flex;
+            flex-direction: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            }
+            .contacto{
+            flex: 5;
+            }
+                .footer-style h5{
+                font-weight: bold;
+                margin-bottom: 0.5%;
+                }
+                .footer-style p{
+                font-size: 12px;
+                }
+            .copy{
+            flex: 3;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            }
+                .footer-style .copyright{
+                color: rgb(72, 126, 149);
+                font-weight: bold;
+                }
 /*Media*/
-@media(max-width:1275px){
+@media(max-width:1262px){
     .nav-menu{
-        height: 12%;
+        height: 10%;
     }
         .nav-menu li{
-            height: 50%;
+        height: 50%;
         }
     .section{
-        height: 41%;
+        height: 45%;
     }
         .section article{
-            height: 100%;
+        height: 100%;
         }
-
 }
-@media(max-width: 765px){
+@media(max-width: 943px){
     .nav-menu{
-        height: 14%;
+        height: 7%;
     }
         .nav-menu li{
-            height:33.33%;
+        height:50%;
         }
     .image-cards{
-        height: 22%;
+        height: 33%;
     }
-        .image-cards li{
-            height: 50%;
+        .image-cards ul{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            }
+                .image-cards li{
+                    height: 20%;
+                    width: 100%;
+                    margin: 0.1%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1 1 auto;
+                    }
+                            .foto{
+                            height: 100%;
+                            flex: 1;
+                            display: flex;
+                            justify-content: center;
+                            }
+                            .text{
+                            height: 100%;
+                            flex: 1;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: space-around;
+                            }
+    .section{
+        height: 40%;
+    }
+        .articulos{
+            width: 99.8%;
+        }
+        section article{
+        height: 100%;
+        }
+}
+
+@media(max-width: 755px){
+    .nav-menu{
+        height: 11%;
+    }
+        .nav-menu li{
+        height:33.33%;
         }
     .section{
-        height: 37%;
+        height:36%;
     }
-        section article{
-            height: 100%;
+}
+@media(max-width: 501px){
+    .nav-menu{
+        height: 19%;
+    }
+        .nav-menu li{
+            height: 20%;
         }
+    .image-cards{
+        height: 28%;
+    }
+    .section{
+        height: 33%;
     }
 }
